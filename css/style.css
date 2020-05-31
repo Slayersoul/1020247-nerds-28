@@ -1,0 +1,14 @@
+/* Variables */
+
+:root {
+	--basic-white: #FFFFFF;
+	--basic-neutral: #EEEEEE;;
+}
+
+/* Global */
+
+body {
+  margin: 10;
+  padding: 0;
+  background-color: var(--basic-white);
+}
