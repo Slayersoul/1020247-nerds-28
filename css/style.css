@@ -2,13 +2,118 @@
 
 :root {
 	--basic-white: #FFFFFF;
-	--basic-neutral: #EEEEEE;;
+	--basic-neutral: #EEEEEE;
+	--basic-font: #000000;
+	--filter-font: #283136;
+	--footer-font: #444444;
 }
 
 /* Global */
 
 body {
-  margin: 10;
+  min-width: 1177px;
+  margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--basic-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   background-color: var(--basic-white);
 }
+
+.visually-hidden {
+	display: none
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 10%;
+  height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  font-style: normal;
+  text-align: center;
+}
+
+/* Main navigation */
+
+nav {
+    line-height: 30px;
+    font-weight: 500;
+    background-color: var(--basic-neutral);
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.site-navigation {
+    list-style: none;
+    color: var(--basic-font);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/* Filters */
+
+.filter {	
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-list {
+	line-height: 19px;
+	color: var(--filter-font);
+}
+
+.slides {
+  list-style: none;
+}
+
+/* Footer */
+
+.social-list {
+  list-style: none;
+}
+
+.social-discount h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.social-discount p {
+   line-height: 22px;
+   color: var(--footer-font);
+}
+
+
+
+
+
+
