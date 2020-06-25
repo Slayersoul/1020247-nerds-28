@@ -45,6 +45,18 @@ h1 {
   text-align: center;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 /* Main navigation */
 
 nav {
@@ -58,6 +70,20 @@ nav {
 .site-navigation {
     list-style: none;
     color: var(--basic-font);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-logo {
+
+} 
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Features */
