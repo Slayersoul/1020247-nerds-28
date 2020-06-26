@@ -11,7 +11,7 @@
 /* Global */
 
 body {
-  min-width: 1177px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -32,7 +32,7 @@ a {
 }
 
 img {
-  max-width: 10%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -67,7 +67,24 @@ nav {
     font-style: normal;
 }
 
+.menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    
+  }
+
+.main-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 49px;
+    margin-left: 140px;
+  } 
+
 .site-navigation {
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    margin-top: 76px;
     list-style: none;
     color: var(--basic-font);
     display: flex;
@@ -75,21 +92,23 @@ nav {
     justify-content: space-around;
 }
 
-.main-logo {
-
-} 
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.cart {
+    grid-column-start: 4;
+    grid-column-end: -1; 
+    margin-top: 76px;
+    margin-right: 140px;
+    justify-self: end;
 }
+
+
 
 /* Features */
 
 .features-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .feature-item {
@@ -105,6 +124,23 @@ nav {
 
 /* Filters */
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-content: start;
+
+}
+
+.right-filter {
+
+}
+
+.slides-section {
+margin-left: 140px;
+margin-right: 140px;
+
+}
+
 .filter {	
   font-weight: bold;
   font-size: 18px;
@@ -118,13 +154,40 @@ nav {
 }
 
 .slides {
+  padding-top: 30px;
+  padding-bottom: 30px; 
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Footer */
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 76px;
+}
+
+.footer-social {
+  width: 300px;
+  justify-self: start;
+  margin-left: 140px;
+  
+}
+
 .social-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-discount {
+  justify-self: start;
+  
+
 }
 
 .social-discount h2 {
@@ -137,7 +200,6 @@ nav {
    line-height: 22px;
    color: var(--footer-font);
 }
-
 
 
 
