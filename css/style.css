@@ -21,6 +21,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   background-color: var(--basic-white);
+  padding-left: 140px;
+  padding-right: 141px;
 }
 
 .visually-hidden {
@@ -99,20 +101,41 @@ nav {
     margin-right: 140px;
     justify-self: end;
 }
+/* Offer */
 
+.main-offer {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.offer-text h1 {
+text-align: left;
+}
+
+.offer-text {
+ 
+}
+
+.offer-image img {
+  width: 760px;
+  height: 431px;
+  padding-right: 141px;
+  justify-self: end;
+
+}
 
 
 /* Features */
 
 .features-list {
-  list-style: none;
+  padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .feature-item {
-  text-align: center;
+
 }
 
 .feature-item h3 {
@@ -156,7 +179,6 @@ margin-right: 140px;
 .slides {
   padding-top: 30px;
   padding-bottom: 30px; 
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
